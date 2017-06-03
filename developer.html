@@ -2,15 +2,17 @@
 <html>
 
 <head>
+    <title>NGDB;info</title>
+    <!--아이콘-->
     <link rel="icon" href="./img/Bicon.png">
     <meta charset="utf-8">
+    <!--시맨틱 ui-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>NGDB;info</title>
     <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="semantic/semantic.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+
     <script>
         $(document)
             .ready(function() {
@@ -25,19 +27,21 @@
                             .removeClass('active');
                     });
             });
-
     </script>
+    <!--CSS3-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
 <body>
     <div class="ui main text container">
+        <!--제목-->
         <header>
             <div id="head">
                 <img src="./img/portal.png" width="40px"><b class="hvc">NGDB;Web
                 </b></div>
         </header>
-
+        <!--메뉴바-->
         <nav>
             <div class="column">
                 <div class="ui secondary pointing menu">
@@ -48,9 +52,8 @@
                         Sub Menu
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <div class="item">개발자 정보</div>
-                            <div class="item">개발자 소개</div>
-                            <div class="item">개발자 코멘트</div>
+                            <a class="hrefc" href="#info"><div class="item">개발자 정보</div></a>
+                            <a class="hrefc" href="#info"><div class="item">개발자 소개</div></a>
                         </div>
                     </div>
                     <div class="right menu">
@@ -59,12 +62,40 @@
                 </div>
             </div>
         </nav>
+        <!--내용-->
         <section>
+            <a id="info"></a>
             <article>
+                <h1 class="hvc">개발자 정보</h1>
+                <br>
+                <img src="./img/sagiri.jpg" title="사기리짜응" width="250px">
+                <ul>
+                    <li>이름 : 김도현</li>
+                    <li>닉네임 : NGDB;blgada</li>
+                    <li>전화번호 : 010-3128-2490</li>
+                    <li>이메일 : blgada12@naver.com</li>
+                    <li>플스 계정 : sblgada</li>
+                    <li>구글 메일 : zz11zz3383@gmail.com</li>
+                    <li>학교 : 선린 인터넷 고등학교</li>
+                    <li>학과 : 소프트웨어과</li>
+                    <li>동아리 : Emotion</li>
+                </ul>
+
             </article>
-            adfasdfasdfasdfs
+            <br>
+            <div class="ui divider"></div>
+            <br>
+            <article>
+                <h1 class="hvc">개발자 소개</h1>
+                <br>
+                <div class="info">선린인터넷고 재학중인 소프트웨어과 1학년 김도현 입니다.<br>안드로이드 스튜디오, 유니티 게임 개발, 웹프로그래밍을 취미로 하는 사람입니다. 현재 서버와 딥러닝, 텐서플로를 배우려고 하고 있습니다. 티스토리 블로그도 운영을 하고 있고, 과거 개인방송 활동도 가끔 하였습니다.<br>잠은 최근에 많아진 편이며 작업이나 일은 최대한 열심히 하려고 노력하는 쪽입니다.간단히 말하면 구를땐 구르는 노예입니다.</div>
+            </article>
         </section>
+        <br>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
+    <!--바닥글-->
     <footer>
         <div class="ui inverted vertical footer segment">
             <div class="ui center aligned container">
