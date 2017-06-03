@@ -23,3 +23,8 @@ nav {
 .cet {
     text-align: center;
 }
+
+.slash {
+    background: url('http://cdn.zetawiki.com/png/slash.png');
+    background-size: 100% 100%;
+}
