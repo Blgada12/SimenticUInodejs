@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <div class="ui main text container">
+    <div id="bd">
         <!--제목-->
         <header>
             <div id="head">
@@ -48,13 +48,6 @@
                     <a class="item" href="index.html">Home</a>
                     <a class="item" href="developer.html">Developer</a>
                     <div class="active item">Laboratory</div>
-                    <div class="ui dropdown item">
-                        Sub Menu
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <a class="hrefc" href="#ti"><div class="item">시간표</div></a>
-                        </div>
-                    </div>
                     <div class="right menu">
                         <a class="ul item" href="http://blgada12.tistory.com/" target="_blank">Tistory</a>
                     </div>
@@ -63,85 +56,99 @@
         </nav>
         <!--내용-->
         <section>
-            <a id="ti"></a>
-            <article>
-                <h1 class="hvc">1학년 4반 시간표</h1>
-                <table class="ui blue celled table" width="300px">
-                    <thead class="cet">
-                        <tr>
-                            <th></th>
-                            <th align="center">월요일</th>
-                            <th>화요일</th>
-                            <th>수요일</th>
-                            <th>목요일</th>
-                            <th>금요일</th>
-                        </tr>
-                    </thead>
-                    <tbody class="cet">
-                        <tr>
-                            <td>1교시</td>
-                            <td rowspan="2" class="positive">프로그래밍</td>
-                            <td rowspan="2" class="positive">컴퓨터일반</td>
-                            <td class="positive">디자인일반</td>
-                            <td rowspan="2" class="positive">네운</td>
-                            <td rowspan="2" class="positive">웹프밍</td>
-                        </tr>
-                        <tr>
-                            <td>2교시</td>
-                            <td class="positive">네운</td>
+            <div class="ui grid">
+                <div class="three wide column">
+                    <div class="menu">
+                        <div class="ui divider"></div>
+                        <a class="hrefc" href="#ti">
+                            <div class="item">시간표</div>
+                        </a>
+                        <div class="ui divider"></div>
+                    </div>
+                </div>
+                <div class="one wide column"></div>
+                
+                <div class="ten wide column">
+                    <h1 class="hvc">1학년 4반 시간표</h1>
+                    <a id="ti"></a>
+                    <br>
+                    <table class="ui blue celled table" width="50%">
+                        <thead class="cet">
+                            <tr>
+                                <th></th>
+                                <th align="center">월요일</th>
+                                <th>화요일</th>
+                                <th>수요일</th>
+                                <th>목요일</th>
+                                <th>금요일</th>
+                            </tr>
+                        </thead>
+                        <tbody class="cet">
+                            <tr>
+                                <td>1교시</td>
+                                <td rowspan="2" class="positive">프로그래밍</td>
+                                <td rowspan="2" class="positive">컴퓨터일반</td>
+                                <td class="positive">디자인일반</td>
+                                <td rowspan="2" class="positive">네운</td>
+                                <td rowspan="2" class="positive">웹프밍</td>
+                            </tr>
+                            <tr>
+                                <td>2교시</td>
+                                <td class="positive">네운</td>
 
-                        </tr>
-                        <tr>
-                            <td>3교시</td>
-                            <td class="warning">수학I</td>
-                            <td class="warning">실용영어A</td>
-                            <td rowspan="2" class="positive">프로그래밍</td>
-                            <td class="active">음악과생활</td>
-                            <td rowspan="2" class="positive">웹디자인</td>
-                        </tr>
-                        <tr>
-                            <td>4교시</td>
-                            <td class="warning">과학A</td>
-                            <td class="active">진로</td>
-                            <td class="warning">수학I</td>
+                            </tr>
+                            <tr>
+                                <td>3교시</td>
+                                <td class="warning">수학I</td>
+                                <td class="warning">실용영어A</td>
+                                <td rowspan="2" class="positive">프로그래밍</td>
+                                <td class="active">음악과생활</td>
+                                <td rowspan="2" class="positive">웹디자인</td>
+                            </tr>
+                            <tr>
+                                <td>4교시</td>
+                                <td class="warning">과학A</td>
+                                <td class="active">진로</td>
+                                <td class="warning">수학I</td>
 
-                        </tr>
-                        <tr>
-                            <td colspan="6" class="negative">점심시간</td>
-                        </tr>
-                        <tr>
-                            <td>5교시</td>
-                            <td class="active">IT교양</td>
-                            <td class="positive">웹프밍</td>
-                            <td class="warning">수학I</td>
-                            <td class="active">창의성연극</td>
-                            <td class="warning">실용영어A</td>
-                        </tr>
-                        <tr>
-                            <td>6교시</td>
-                            <td class="warning">과학B</td>
-                            <td class="warning">실용영어B</td>
-                            <td class="warning">국어I A</td>
-                            <td class="warning">국어I A</td>
-                            <td class="active">자율활동</td>
-                        </tr>
-                        <tr>
-                            <td>7교시</td>
-                            <td class="active">운동과건강</td>
-                            <td class="warning">국어I B</td>
-                            <td class="active">동아리활동</td>
-                            <td class="active">운동과건강</td>
-                            <td class="slash"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="negative">점심시간</td>
+                            </tr>
+                            <tr>
+                                <td>5교시</td>
+                                <td class="active">IT교양</td>
+                                <td class="positive">웹프밍</td>
+                                <td class="warning">수학I</td>
+                                <td class="active">창의성연극</td>
+                                <td class="warning">실용영어A</td>
+                            </tr>
+                            <tr>
+                                <td>6교시</td>
+                                <td class="warning">과학B</td>
+                                <td class="warning">실용영어B</td>
+                                <td class="warning">국어I A</td>
+                                <td class="warning">국어I A</td>
+                                <td class="active">자율활동</td>
+                            </tr>
+                            <tr>
+                                <td>7교시</td>
+                                <td class="active">운동과건강</td>
+                                <td class="warning">국어I B</td>
+                                <td class="active">동아리활동</td>
+                                <td class="active">운동과건강</td>
+                                <td class="slash"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
         </section>
         <br>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     <!--바닥글-->
     <footer>
         <div class="ui inverted vertical footer segment">

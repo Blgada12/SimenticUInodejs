@@ -28,3 +28,8 @@ nav {
     background: url('http://cdn.zetawiki.com/png/slash.png');
     background-size: 100% 100%;
 }
+
+#bd {
+    padding-left: 50px;
+    padding-right: 50px
+}
