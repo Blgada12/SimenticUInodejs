@@ -27,7 +27,6 @@
                             .removeClass('active');
                     });
             });
-
     </script>
     <!--CSS3-->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -37,27 +36,40 @@
 <body>
     <div id="bd">
         <!--제목-->
-        <header>
-            <div id="head">
-                <img src="./img/portal.png" width="40px"><b class="hvc">NGDB;Web
+        <div class="ui grid">
+            <div class="three wide column"></div>
+            <div class="ten wide column">
+                <header>
+                    <div id="head">
+                        <img src="./img/portal.png" width="40px"><b class="hvc">NGDB;Web
                 </b></div>
-        </header>
-        <!--메뉴바-->
-        <nav>
-            <div class="column">
-                <div class="ui secondary pointing menu">
-                    <div class="active item">Home</div>
-                    <a class="item" href="developer.html">Developer</a>
-                    <a class="item" href="laboratory.html">Laboratory</a>
-                    <div class="right menu">
-                        <a class="ul item" href="http://blgada12.tistory.com/" target="_blank">Tistory</a>
-                    </div>
-                </div>
+                </header>
             </div>
-        </nav>
+            <div class="three wide column"></div>
+        </div>
+        <!--메뉴바-->
+        <div class="ui grid">
+            <div class="three wide column"></div>
+            <div class="ten wide column">
+                <nav>
+                    <div class="column">
+                        <div class="ui secondary pointing menu">
+                            <div class="active item">Home</div>
+                            <a class="item" href="developer.html">Developer</a>
+                            <a class="item" href="laboratory.html">Laboratory</a>
+                            <div class="right menu">
+                                <a class="ul item" href="http://blgada12.tistory.com/" target="_blank">Tistory</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="three wide column"></div>
+        </div>
         <!--내용-->
         <section>
             <div class="ui grid">
+                <div class="three wide column"></div>
                 <div class="three wide column">
                     <div class="menu">
                         <div class="ui divider"></div>
@@ -75,8 +87,7 @@
                         <div class="ui divider"></div>
                     </div>
                 </div>
-                <div class="one wide column"></div>
-                <div class="ten wide column">
+                <div id="top" class="seven wide column">
                     <a id="info"></a>
                     <article>
                         <h1 class="hvc">홈페이지 상세</h1>
@@ -133,6 +144,7 @@
                         </ul>
                     </div>
                 </div>
+                <div class="three wide column"></div>
             </div>
         </section>
 
