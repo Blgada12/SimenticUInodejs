@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NGDB;main</title>
+    <!--아이콘-->
+    <link rel="icon" href="./img/icon.png">
+    <meta charset="utf-8">
+    <!--시맨틱 ui-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/semantic.js"></script>
+
+    <script>
+        $(document)
+            .ready(function() {
+                $('.ui.menu .ui.dropdown').dropdown({
+                    on: 'hover'
+                });
+                $('.ui.menu a.item')
+                    .on('click', function() {
+                        $(this)
+                            .addClass('active')
+                            .siblings()
+                            .removeClass('active');
+                    });
+            });
+    </script>
+    <!--CSS3-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div id="bd">
+        <!--제목-->
+        <div class="ui grid">
+            <div class="three wide column"></div>
+            <div class="ten wide column">
+                <header>
+                    <div id="head">
+                        <img src="./img/portal.png" width="40px"><b class="hvc">NGDB;Web
+                </b></div>
+                </header>
+            </div>
+            <div class="three wide column"></div>
+        </div>
+        <!--메뉴바-->
+        <div class="ui grid">
+            <div class="three wide column"></div>
+            <div class="ten wide column">
+                <nav>
+                    <div class="column">
+                        <div class="ui secondary pointing menu">
+                            <div class="active item">Home</div>
+                            <a class="item" href="/developer">Developer</a>
+                            <a class="item" href="/laboratory">Laboratory</a>
+                            <a class="item" href="">Portfolio</a>
+                            <div class="right menu">
+                                <a class="ul item" href="http://blgada12.tistory.com/" target="_blank">Tistory</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="three wide column"></div>
+        </div>
+        <!--내용-->
+        <section>
+            <div class="ui grid">
+                <div class="three wide column"></div>
+                <div class="three wide column">
+                    <div class="menu">
+                        <div class="ui divider"></div>
+                        <a class="hrefc" href="#info">
+                            <div class="item">홈페이지 상세</div>
+                        </a>
+                        <div class="ui divider"></div>
+                        <a class="hrefc" href="#histo">
+                            <div class="item">개발 역사</div>
+                        </a>
+                        <div class="ui divider"></div>
+                        <a class="hrefc" href="#note">
+                            <div class="item">본 홈페이지 개발노트</div>
+                        </a>
+                        <div class="ui divider"></div>
+                    </div>
+                </div>
+                <div id="top" class="seven wide column">
+                    <a id="info"></a>
+                    <article>
+                        <h1 class="hvc">홈페이지 상세</h1>
+                        <br>
+                        <img src="img/responsive-fin.jpg" width="100%">
+                        <div class="info">블가다의 <b>세번째</b> 웹 프로그래밍 작품이다.<br> 부트스트랩을 이용하였던 이전 웹들과 달리 <b>시맨틱 UI</b>를 사용하여 제작중이다.<br> 사용 목적은 단기적으로 봤을때는 학교 수업 실습용, 장기적으로 봤을때는 티스토리 블로그 적용을 위함이다.
+                        </div>
+                        <br>
+                        <div class="info">웹페이지 제작을 통해 <b>추구하고 싶은 것</b>
+                            <ul>
+                                <li><b>시맨틱 UI</b> 활용 실습</li>
+                                <li>시맨틱 구조 밑 <b>웹 표준</b> 연습</li>
+                                <li>프론트 엔드의 <b>자바 스크립트</b> 완성</li>
+                                <li>추후 <b>node.js 웹서버</b> 연동</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <br>
+                    <div class="ui divider"></div>
+                    <br>
+
+                    <a id="histo"></a>
+                    <article>
+                        <h1 class="hvc">개발 역사</h1>
+                        <br>
+                        <div class="info">블가다의 웹페이지들
+                            <ol type="1">
+                                <li><a class="hrefc" href="https://blgada12.github.io/web" target="_blank">부트스트랩 실습용 웹</a></li>
+                                <li><a class="hrefc" href="http://blgada12.tistory.com/" target="_blank">티스토리 공개용 웹</a></li>
+                                <li><a class="hrefc" href="index.html">시맨틱 UI 실습용 웹</a></li>
+                            </ol>
+                            위 순서대로 개발이 진행되었으며, 티스토리 공개용 웹은 아직 기본 html을 사용하는 중이다.
+                        </div>
+                    </article>
+                    <br>
+                    <div class="ui divider"></div>
+                    <br>
+                    <a id="note"></a>
+                    <h1 class="hvc">홈페이지 개발 노트</h1>
+                    <br>
+                    <div class="info">
+                        Beta버전
+                        <ul>
+                            <li>0.0.1 - 기본적 디자인 틀이 완성된 홈페이지.</li>
+                            <li>0.0.2 - 비어있던 공간에 내용이 모두 완성됨.</li>
+                            <li>0.0.3 - 아이콘이 변경되고 여러 사진이 추가됨</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        Alpha버전
+                        <ul>
+                            <li>업데이트 예정</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="three wide column"></div>
+            </div>
+        </section>
+
+        <br>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <!--바닥글-->
+    <footer>
+        <div class="ui inverted vertical footer segment">
+            <div class="ui center aligned container">
+                <img src="./img/portal.png" class="ui centered mini image">
+                <div class="ui horizontal inverted small divided link list">
+                    <div class="item">Copyright COPYRIGHT(C) NGDB_blgada. ALL RIGHT RESERVED</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
